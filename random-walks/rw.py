@@ -92,4 +92,3 @@ for i, dt in enumerate(drunk_types):
         a.set_ylabel('Steps N/S')
 
 plt.show()
-
