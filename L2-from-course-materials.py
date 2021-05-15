@@ -65,9 +65,12 @@ def testGreedys(foods, maxUnits):
 
 
 def maxVal(toConsider, avail):
-    """Assumes toConsider a list of items, avail a weight
-       Returns a tuple of the total value of a solution to the
-         0/1 knapsack problem and the items of that solution"""
+    """
+    Assumes toConsider a list of items, avail a weight
+    Returns a tuple of the total value of a solution to the
+    binary knapsack problem and the items of that solution
+    """
+
     if toConsider == [] or avail == 0:
         result = (0, ())
     elif toConsider[0].getCost() > avail:
